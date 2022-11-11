@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="HO_Address">
+          <DataField>HO_Address</DataField>
+        </Field>
+        <Field Name="VendorNo">
+          <DataField>VendorNo</DataField>
+        </Field>
+        <Field Name="VendorName">
+          <DataField>VendorName</DataField>
+        </Field>
+        <Field Name="VendorAddress">
+          <DataField>VendorAddress</DataField>
+        </Field>
+        <Field Name="VendorCity">
+          <DataField>VendorCity</DataField>
+        </Field>
+        <Field Name="PostingGroup">
+          <DataField>PostingGroup</DataField>
+        </Field>
+        <Field Name="StartBalance">
+          <DataField>StartBalance</DataField>
+        </Field>
+        <Field Name="StartBalanceFormat">
+          <DataField>StartBalanceFormat</DataField>
+        </Field>
+        <Field Name="PrintAll">
+          <DataField>PrintAll</DataField>
+        </Field>
+        <Field Name="VendDateFilter">
+          <DataField>VendDateFilter</DataField>
+        </Field>
+        <Field Name="PrintOnly">
+          <DataField>PrintOnly</DataField>
+        </Field>
+        <Field Name="NetChange">
+          <DataField>NetChange</DataField>
+        </Field>
+        <Field Name="NetChangeFormat">
+          <DataField>NetChangeFormat</DataField>
+        </Field>
+        <Field Name="CompanyLogo">
+          <DataField>CompanyLogo</DataField>
+        </Field>
+        <Field Name="Company_name">
+          <DataField>Company_name</DataField>
+        </Field>
+        <Field Name="ConfirmationAccount1">
+          <DataField>ConfirmationAccount1</DataField>
+        </Field>
+        <Field Name="VendorPANNo">
+          <DataField>VendorPANNo</DataField>
+        </Field>
+        <Field Name="CompanyPANNo">
+          <DataField>CompanyPANNo</DataField>
+        </Field>
+        <Field Name="Current_Date">
+          <DataField>Current_Date</DataField>
+        </Field>
+        <Field Name="PostingDate">
+          <DataField>PostingDate</DataField>
+        </Field>
+        <Field Name="DocNo">
+          <DataField>DocNo</DataField>
+        </Field>
+        <Field Name="SBU">
+          <DataField>SBU</DataField>
+        </Field>
+        <Field Name="Desc">
+          <DataField>Desc</DataField>
+        </Field>
+        <Field Name="TDS">
+          <DataField>TDS</DataField>
+        </Field>
+        <Field Name="TDSFormat">
+          <DataField>TDSFormat</DataField>
+        </Field>
+        <Field Name="DbAmt">
+          <DataField>DbAmt</DataField>
+        </Field>
+        <Field Name="DbAmtFormat">
+          <DataField>DbAmtFormat</DataField>
+        </Field>
+        <Field Name="CrAmt">
+          <DataField>CrAmt</DataField>
+        </Field>
+        <Field Name="CrAmtFormat">
+          <DataField>CrAmtFormat</DataField>
+        </Field>
+        <Field Name="InvNo">
+          <DataField>InvNo</DataField>
+        </Field>
+        <Field Name="ExtDocNo">
+          <DataField>ExtDocNo</DataField>
+        </Field>
+        <Field Name="Amt">
+          <DataField>Amt</DataField>
+        </Field>
+        <Field Name="AmtFormat">
+          <DataField>AmtFormat</DataField>
+        </Field>
+        <Field Name="TotalBalance">
+          <DataField>TotalBalance</DataField>
+        </Field>
+        <Field Name="TotalBalanceFormat">
+          <DataField>TotalBalanceFormat</DataField>
+        </Field>
+        <Field Name="Check_No">
+          <DataField>Check_No</DataField>
+        </Field>
+        <Field Name="BalACNo">
+          <DataField>BalACNo</DataField>
+        </Field>
+        <Field Name="GLACName">
+          <DataField>GLACName</DataField>
+        </Field>
+        <Field Name="CheckBool">
+          <DataField>CheckBool</DataField>
+        </Field>
+        <Field Name="ShowNar">
+          <DataField>ShowNar</DataField>
+        </Field>
+        <Field Name="Amtt">
+          <DataField>Amtt</DataField>
+        </Field>
+        <Field Name="AmttFormat">
+          <DataField>AmttFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

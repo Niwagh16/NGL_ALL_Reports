@@ -1,0 +1,113 @@
+{
+  "id": "8d482148-c0a3-4231-a742-b94c2f8f8d12",
+  "name": "NGL_ALL_Reports",
+  "publisher": "Pacific",
+  "version": "1.0.0.0",
+  "brief": "",
+  "description": "All NGL Report Extension",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "appId": "db643212-b7fb-4dd4-b5a8-cb44ac714461",
+      "publisher": "Microsoft",
+      "name": "India GST",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "d3c551dd-5903-4194-b153-04ced9d29a2c",
+      "publisher": "Microsoft",
+      "name": "India Tax Base",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "eddcf82e-482c-49d1-836b-ad0284f2c5b0",
+      "publisher": "Microsoft",
+      "name": "India TCS",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "eae5779e-7797-4c4c-977e-7516652b7a65",
+      "publisher": "Microsoft",
+      "name": "India TDS",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "2dc39818-e0f0-42b6-99eb-ba29dc5f4102",
+      "publisher": "Microsoft",
+      "name": "India Gate Entry",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "c1eafb3f-e397-468e-bdb4-ecc5c317ca00",
+      "publisher": "Microsoft",
+      "name": "Tax Engine",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "050f6146-bffd-40de-942c-d0dd510ec20f",
+      "publisher": "Microsoft",
+      "name": "India Reports",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "1150dd8d-51da-485a-bd4a-1ee98d78c21a",
+      "publisher": "Microsoft",
+      "name": "Fixed Asset Depreciation for India",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "f1d9b696-156b-4251-b542-34e549fa80e9",
+      "publisher": "Microsoft",
+      "name": "India Voucher Interface",
+      "version": "18.2.26217.26490"
+    },
+    {
+      "appId": "ce23a5e7-f942-4e2f-8f66-43548cc760ac",
+      "publisher": "Pacific",
+      "name": "Indent Extension",
+      "version": "1.0.0.1"
+      
+    },
+    {
+      "appId": "ab1cd054-e7b5-4f8f-9283-aa8c9a485858",
+    "name": "QC_Extension",
+    "publisher": "Pacific",
+    "version": "1.0.0.2"
+    },
+    {
+      "appId": "91ad44b7-a318-40bd-b41f-f70afd019a5d",
+    "name": "E-Invoice & E-Way",
+    "publisher": "Pacific",
+    "version": "1.0.0.0"
+    },
+    {
+    "appId": "a0d78c10-125d-42bc-a5b0-4f1bd9b18300",
+    "name": "Sales_Purchase_New",
+    "publisher": "Pacific",
+    "version": "1.0.0.1"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 50649
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "9.0",
+  "target": "OnPrem",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

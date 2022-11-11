@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="txtShipToAddr_6_">
+          <DataField>txtShipToAddr_6_</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Header__Pre_Carriage_">
+          <DataField>Sales_Invoice_Header__Pre_Carriage_</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Header_Carriage">
+          <DataField>Sales_Invoice_Header_Carriage</DataField>
+        </Field>
+        <Field Name="txtShipToAddr_5_">
+          <DataField>txtShipToAddr_5_</DataField>
+        </Field>
+        <Field Name="txtShipToAddr_4_">
+          <DataField>txtShipToAddr_4_</DataField>
+        </Field>
+        <Field Name="txtShipToAddr_3_">
+          <DataField>txtShipToAddr_3_</DataField>
+        </Field>
+        <Field Name="txtShipToAddr_2_">
+          <DataField>txtShipToAddr_2_</DataField>
+        </Field>
+        <Field Name="txtShipToAddr_1_">
+          <DataField>txtShipToAddr_1_</DataField>
+        </Field>
+        <Field Name="txtCompanyAddr_6_">
+          <DataField>txtCompanyAddr_6_</DataField>
+        </Field>
+        <Field Name="recCountry_Name">
+          <DataField>recCountry_Name</DataField>
+        </Field>
+        <Field Name="txtCompanyAddr_5_">
+          <DataField>txtCompanyAddr_5_</DataField>
+        </Field>
+        <Field Name="txtCompanyAddr_4_">
+          <DataField>txtCompanyAddr_4_</DataField>
+        </Field>
+        <Field Name="txtCompanyAddr_3_">
+          <DataField>txtCompanyAddr_3_</DataField>
+        </Field>
+        <Field Name="txtCompanyAddr_2_">
+          <DataField>txtCompanyAddr_2_</DataField>
+        </Field>
+        <Field Name="txtCompanyAddr_1_">
+          <DataField>txtCompanyAddr_1_</DataField>
+        </Field>
+        <Field Name="V3__Means_of_transport_and_route___as_far_as_know__Caption">
+          <DataField>V3__Means_of_transport_and_route___as_far_as_know__Caption</DataField>
+        </Field>
+        <Field Name="V4__For_official_useCaption">
+          <DataField>V4__For_official_useCaption</DataField>
+        </Field>
+        <Field Name="country_Caption">
+          <DataField>country_Caption</DataField>
+        </Field>
+        <Field Name="V2__Goods_consigned_to_consignee_s_name__address_Caption">
+          <DataField>V2__Goods_consigned_to_consignee_s_name__address_Caption</DataField>
+        </Field>
+        <Field Name="Issued_InCaption">
+          <DataField>Issued_InCaption</DataField>
+        </Field>
+        <Field Name="FORM_ACaption">
+          <DataField>FORM_ACaption</DataField>
+        </Field>
+        <Field Name="Combined_declaration_and_certificate_Caption">
+          <DataField>Combined_declaration_and_certificate_Caption</DataField>
+        </Field>
+        <Field Name="OF_ORIGINCaption">
+          <DataField>OF_ORIGINCaption</DataField>
+        </Field>
+        <Field Name="GENERALIZED_SYSTEM_OF_PREFERENCES_CERTIFICATECaption">
+          <DataField>GENERALIZED_SYSTEM_OF_PREFERENCES_CERTIFICATECaption</DataField>
+        </Field>
+        <Field Name="name__address__country_Caption">
+          <DataField>name__address__country_Caption</DataField>
+        </Field>
+        <Field Name="V1__Goods_consigned_from__Exporters_business_Caption">
+          <DataField>V1__Goods_consigned_from__Exporters_business_Caption</DataField>
+        </Field>
+        <Field Name="Reference_No_Caption">
+          <DataField>Reference_No_Caption</DataField>
+        </Field>
+        <Field Name="GENERALIZED_SYSTEM_OF_PREFERENCES_CERTIFICATE_OF_ORIGINCaption">
+          <DataField>GENERALIZED_SYSTEM_OF_PREFERENCES_CERTIFICATE_OF_ORIGINCaption</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Header_No_">
+          <DataField>Sales_Invoice_Header_No_</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Line__Gross_Weight_">
+          <DataField>Sales_Invoice_Line__Gross_Weight_</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Line__Gross_Weight_Format">
+          <DataField>Sales_Invoice_Line__Gross_Weight_Format</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Line_Description">
+          <DataField>Sales_Invoice_Line_Description</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Line__No__">
+          <DataField>Sales_Invoice_Line__No__</DataField>
+        </Field>
+        <Field Name="codInvNo__">
+          <DataField>codInvNo__</DataField>
+        </Field>
+        <Field Name="datPostingDate">
+          <DataField>datPostingDate</DataField>
+        </Field>
+        <Field Name="txtCountryName">
+          <DataField>txtCountryName</DataField>
+        </Field>
+        <Field Name="intPackingListNo__">
+          <DataField>intPackingListNo__</DataField>
+        </Field>
+        <Field Name="txtCountryofOrigin">
+          <DataField>txtCountryofOrigin</DataField>
+        </Field>
+        <Field Name="txtCountryofFinalDestination">
+          <DataField>txtCountryofFinalDestination</DataField>
+        </Field>
+        <Field Name="of_InvoicesCaption">
+          <DataField>of_InvoicesCaption</DataField>
+        </Field>
+        <Field Name="or_otherCaption">
+          <DataField>or_otherCaption</DataField>
+        </Field>
+        <Field Name="weightCaption">
+          <DataField>weightCaption</DataField>
+        </Field>
+        <Field Name="and_dateCaption">
+          <DataField>and_dateCaption</DataField>
+        </Field>
+        <Field Name="see_noted_Overleaf__Caption">
+          <DataField>see_noted_Overleaf__Caption</DataField>
+        </Field>
+        <Field Name="V8__Origin_CriterionCaption">
+          <DataField>V8__Origin_CriterionCaption</DataField>
+        </Field>
+        <Field Name="V9__GrossCaption">
+          <DataField>V9__GrossCaption</DataField>
+        </Field>
+        <Field Name="V10__NumberCaption">
+          <DataField>V10__NumberCaption</DataField>
+        </Field>
+        <Field Name="V6__Number_and_Kind_of_Caption">
+          <DataField>V6__Number_and_Kind_of_Caption</DataField>
+        </Field>
+        <Field Name="Packages__description_ofCaption">
+          <DataField>Packages__description_ofCaption</DataField>
+        </Field>
+        <Field Name="goodsCaption">
+          <DataField>goodsCaption</DataField>
+        </Field>
+        <Field Name="V7__Marks_andCaption">
+          <DataField>V7__Marks_andCaption</DataField>
+        </Field>
+        <Field Name="Number_ofCaption">
+          <DataField>Number_ofCaption</DataField>
+        </Field>
+        <Field Name="PackagesCaption">
+          <DataField>PackagesCaption</DataField>
+        </Field>
+        <Field Name="V5__ItemCaption">
+          <DataField>V5__ItemCaption</DataField>
+        </Field>
+        <Field Name="NumberCaption">
+          <DataField>NumberCaption</DataField>
+        </Field>
+        <Field Name="of_InvoicesCaption_Control1280005">
+          <DataField>of_InvoicesCaption_Control1280005</DataField>
+        </Field>
+        <Field Name="or_otherCaption_Control1280007">
+          <DataField>or_otherCaption_Control1280007</DataField>
+        </Field>
+        <Field Name="weightCaption_Control1280009">
+          <DataField>weightCaption_Control1280009</DataField>
+        </Field>
+        <Field Name="see_noted_Overleaf__Caption_Control1280010">
+          <DataField>see_noted_Overleaf__Caption_Control1280010</DataField>
+        </Field>
+        <Field Name="and_dateCaption_Control1280011">
+          <DataField>and_dateCaption_Control1280011</DataField>
+        </Field>
+        <Field Name="V8__Origin_CriterionCaption_Control1280014">
+          <DataField>V8__Origin_CriterionCaption_Control1280014</DataField>
+        </Field>
+        <Field Name="V9__GrossCaption_Control1280015">
+          <DataField>V9__GrossCaption_Control1280015</DataField>
+        </Field>
+        <Field Name="V10__NumberCaption_Control1280016">
+          <DataField>V10__NumberCaption_Control1280016</DataField>
+        </Field>
+        <Field Name="V5__ItemCaption_Control1280024">
+          <DataField>V5__ItemCaption_Control1280024</DataField>
+        </Field>
+        <Field Name="NumberCaption_Control1280025">
+          <DataField>NumberCaption_Control1280025</DataField>
+        </Field>
+        <Field Name="PackagesCaption_Control1280013">
+          <DataField>PackagesCaption_Control1280013</DataField>
+        </Field>
+        <Field Name="Number_ofCaption_Control1280017">
+          <DataField>Number_ofCaption_Control1280017</DataField>
+        </Field>
+        <Field Name="Packages__description_ofCaption_Control1280018">
+          <DataField>Packages__description_ofCaption_Control1280018</DataField>
+        </Field>
+        <Field Name="goodsCaption_Control1280019">
+          <DataField>goodsCaption_Control1280019</DataField>
+        </Field>
+        <Field Name="V7__Marks_andCaption_Control1280020">
+          <DataField>V7__Marks_andCaption_Control1280020</DataField>
+        </Field>
+        <Field Name="V6__Number_and_Kind_of_Caption_Control1280021">
+          <DataField>V6__Number_and_Kind_of_Caption_Control1280021</DataField>
+        </Field>
+        <Field Name="Place_and_date_signature_and_stamp_ofCaption">
+          <DataField>Place_and_date_signature_and_stamp_ofCaption</DataField>
+        </Field>
+        <Field Name="authorized_signatoryCaption">
+          <DataField>authorized_signatoryCaption</DataField>
+        </Field>
+        <Field Name="of_Preferences_for_goods_exported_toCaption">
+          <DataField>of_Preferences_for_goods_exported_toCaption</DataField>
+        </Field>
+        <Field Name="authorized_signatoryCaption_Control1280166">
+          <DataField>authorized_signatoryCaption_Control1280166</DataField>
+        </Field>
+        <Field Name="Specified_for_those_goods_in_the_generalized_systemCaption">
+          <DataField>Specified_for_those_goods_in_the_generalized_systemCaption</DataField>
+        </Field>
+        <Field Name="Place_and_date_signature_and_stamp_of_Caption">
+          <DataField>Place_and_date_signature_and_stamp_of_Caption</DataField>
+        </Field>
+        <Field Name="And_that_they_comply_with_the_original_requirementsCaption">
+          <DataField>And_that_they_comply_with_the_original_requirementsCaption</DataField>
+        </Field>
+        <Field Name="the_exporter_is_correct_Caption">
+          <DataField>the_exporter_is_correct_Caption</DataField>
+        </Field>
+        <Field Name="were_Produced_inCaption">
+          <DataField>were_Produced_inCaption</DataField>
+        </Field>
+        <Field Name="carried_out__that_the_declaration_by_Caption">
+          <DataField>carried_out__that_the_declaration_by_Caption</DataField>
+        </Field>
+        <Field Name="details_and_statement_are_correct__that_all_the_goodsCaption">
+          <DataField>details_and_statement_are_correct__that_all_the_goodsCaption</DataField>
+        </Field>
+        <Field Name="It_is_hereby_certified__on_the_basis_of_controlCaption">
+          <DataField>It_is_hereby_certified__on_the_basis_of_controlCaption</DataField>
+        </Field>
+        <Field Name="The_undersigned_hereby_declare_that_the_above_Caption">
+          <DataField>The_undersigned_hereby_declare_that_the_above_Caption</DataField>
+        </Field>
+        <Field Name="V11__CertificationCaption">
+          <DataField>V11__CertificationCaption</DataField>
+        </Field>
+        <Field Name="V12__Declaration_by_the_exporterCaption">
+          <DataField>V12__Declaration_by_the_exporterCaption</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Line_Document_No_">
+          <DataField>Sales_Invoice_Line_Document_No_</DataField>
+        </Field>
+        <Field Name="Sales_Invoice_Line_Line_No_">
+          <DataField>Sales_Invoice_Line_Line_No_</DataField>
+        </Field>
+        <Field Name="Extended_Text_Line__Extended_Text_Line__Text">
+          <DataField>Extended_Text_Line__Extended_Text_Line__Text</DataField>
+        </Field>
+        <Field Name="Extended_Text_Line_Table_Name">
+          <DataField>Extended_Text_Line_Table_Name</DataField>
+        </Field>
+        <Field Name="Extended_Text_Line_No_">
+          <DataField>Extended_Text_Line_No_</DataField>
+        </Field>
+        <Field Name="Extended_Text_Line_Language_Code">
+          <DataField>Extended_Text_Line_Language_Code</DataField>
+        </Field>
+        <Field Name="Extended_Text_Line_Text_No_">
+          <DataField>Extended_Text_Line_Text_No_</DataField>
+        </Field>
+        <Field Name="Extended_Text_Line_Line_No_">
+          <DataField>Extended_Text_Line_Line_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
