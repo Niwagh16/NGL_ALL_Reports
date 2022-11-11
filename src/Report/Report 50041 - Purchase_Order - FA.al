@@ -1098,7 +1098,7 @@ report 50041 "Purchase_Order - FA"
                 IF StateShipTo.GET(ShipToLocation."State Code") THEN;
 
                 IF user.GET("Purchase Header"."Assigned User ID") THEN
-                    CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code");
+                    //CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code");
                 CompanyInfo.GET;
 
                 /*IF "Purchase Header"."Shortcut Dimension 1 Code"='' THEN

@@ -1307,7 +1307,7 @@ report 50000 "ExporInvoice-PostShipment"
 
                 CompanyInfo.GET;
                 CompanyInfo.CALCFIELDS(Picture);
-                CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); PCPL/NSW/07 04Nov22
+                // CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); PCPL/NSW/07 04Nov22
                 //IsGSTApplicable := GSTManagement.IsGSTApplicable(Structure);
                 Customer.GET("Bill-to Customer No.");
                 IF RespCenter.GET("Responsibility Center") THEN BEGIN

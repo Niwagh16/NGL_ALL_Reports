@@ -1168,8 +1168,8 @@ report 50035 "Purchase_Order - NGL_T"
                     Country := CR.Name;
                 END;
 
-                IF user.GET("Purchase Header"."Assigned User ID") THEN
-                    CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code");//PCPL/NSW/07
+                IF user.GET("Purchase Header"."Assigned User ID") THEN;
+                //CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code");//PCPL/NSW/07
 
                 CompanyInfo.GET;
 

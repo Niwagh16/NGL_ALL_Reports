@@ -1105,7 +1105,7 @@ report 50061 "Purchase_Order - NGL_T CHANGE"
                 END;
 
                 IF user.GET("Purchase Header"."Assigned User ID") THEN
-                    CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code");//PCPL/NSW/07
+                    //CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code");//PCPL/NSW/07
 
                 CompanyInfo.GET;
 

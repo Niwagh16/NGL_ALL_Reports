@@ -1269,7 +1269,7 @@ report 50097 "Tax Invoice-Export"
             begin
                 CompanyInfo.GET;
                 CompanyInfo.CALCFIELDS(Picture);
-                CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); //PCPL/NSW/MIG 01Aug22
+                //CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); //PCPL/NSW/MIG 01Aug22
                 // IsGSTApplicable := GSTManagement.IsGSTApplicable(Structure); //PCPL/NSW/MIG 09Aug22
                 Customer.GET("Bill-to Customer No.");
                 IF RespCenter.GET("Responsibility Center") THEN BEGIN

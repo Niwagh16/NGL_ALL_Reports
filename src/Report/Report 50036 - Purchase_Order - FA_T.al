@@ -1126,8 +1126,8 @@ report 50036 "Purchase_Order - FA_T"
                 IF StateShipTo.GET(ShipToLocation."State Code") THEN;
 
                 IF user.GET("Purchase Header"."Assigned User ID") THEN
-                    CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); //PCPL/NSW/07
-                CompanyInfo.GET;
+                    // CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); //PCPL/NSW/07
+                    CompanyInfo.GET;
 
                 /*IF "Purchase Header"."Shortcut Dimension 1 Code"='' THEN
                   ERROR('Please select Unit code');

@@ -1258,7 +1258,7 @@ report 50098 "ExporInvoice-GST"
                 //
                 CompanyInfo.GET;
                 CompanyInfo.CALCFIELDS(Picture);
-                CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code"); //PCPL/NSW/MIG 01Aug22
+                //CurrReport.LANGUAGE := 1;//Language.GetLanguageID("Language Code"); //PCPL/NSW/MIG 01Aug22
                 // IsGSTApplicable := GSTManagement.IsGSTApplicable(Structure);
                 Customer.GET("Bill-to Customer No.");
                 IF RespCenter.GET("Responsibility Center") THEN BEGIN

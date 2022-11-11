@@ -1070,7 +1070,7 @@ report 50095 "Tax Invoice (Sales - Invoice)"
                 //PCPL-25 31dec20
                 CompanyInfo.GET;
                 CompanyInfo.CALCFIELDS(Picture);
-                CurrReport.LANGUAGE := 1;//;Language.GetLanguageID("Language Code"); //PCPL/NSW/MIG 01Aug22
+                // CurrReport.LANGUAGE :=Language//.GetLanguageID("Language Code"); //PCPL/NSW/MIG 01Aug22
                 //   IsGSTApplicable := GSTManagement.IsGSTApplicable(Structure); //PCPL/NSW/MIG 01Aug22
                 Customer.GET("Bill-to Customer No.");
                 DrugLicNo := ''; //Customer."Drug Lic. No. 1";//PCPL0041-04022020 //PCPL-Deepak

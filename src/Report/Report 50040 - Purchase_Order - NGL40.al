@@ -1099,9 +1099,9 @@ report 50040 "Purchase_Order - NGL40"
                 END;
 
                 IF user.GET("Purchase Header"."Assigned User ID") THEN
-                    CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); //PCPL/NSW/07
+                    // CurrReport.LANGUAGE := 1;// Language.GetLanguageID("Language Code"); //PCPL/NSW/07
 
-                CompanyInfo.GET;
+                    CompanyInfo.GET;
 
 
                 /*IF "Purchase Header"."Shortcut Dimension 1 Code"='' THEN
