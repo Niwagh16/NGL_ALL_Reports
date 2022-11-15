@@ -34,6 +34,19 @@ pageextension 50175 Posted_sales_inv_Ext_1_Report extends "Posted Sales Invoice"
 
                 end;
             }
+            action("Mail send Testing ")
+            {
+                Caption = 'Mail send Testing ';
+                Image = Email;
+                ApplicationArea = all;
+                Visible = false;
+                trigger OnAction()
+                var
+                    Email: Codeunit "Email Test";
+                begin
+                    Email.Run();
+                end;
+            }
             action("<Action251>")
             {
                 Caption = 'Inter-Unit Sale(Tax Invoice)';
