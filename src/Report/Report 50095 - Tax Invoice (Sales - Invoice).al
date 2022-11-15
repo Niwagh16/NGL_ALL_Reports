@@ -955,20 +955,44 @@ report 50095 "Tax Invoice (Sales - Invoice)"
                                 vTCSAmt += TCSEntry."TCS Amount";
                                 vTCSPer := 'TCS @' + FORMAT(TCSEntry."TCS %") + ' %';
                             END;
-                            RCheck.InitTextVariable;
-                            RCheck.FormatNoText(vTCSAmtWords, vTCSAmt, '');
-                            //PCPL 38
-                            RCheck.InitTextVariable;
-                            RCheck.FormatNoText(AmtWords, AmttoCustomer, '');
 
-                            RCheck.InitTextVariable;
-                            RCheck.FormatNoText(AmtWordsgstbase, GSTBaseAmt, '');
-                            RCheck.InitTextVariable;
-                            RCheck.FormatNoText(AmtWordsCGS, CGSTAmt, '');
-                            RCheck.InitTextVariable;
-                            RCheck.FormatNoText(AmtWordsSGS, SGSTAmt, '');
-                            RCheck.InitTextVariable;
-                            RCheck.FormatNoText(AmtWordsIGS, IGSTAmt, '');
+                            SalesInvLine.RESET;
+                            SalesInvLine.SETRANGE(SalesInvLine."Document No.", "Sales Invoice Header"."No.");
+                            //SalesInvLine.SETRANGE(Type, SalesInvLine.Type::Item);
+                            IF SalesInvLine.FindSet() THEN
+                                REPEAT
+                                    GrossTotal += SalesInvLine.Amount;
+                                UNTIL SalesInvLine.NEXT = 0;
+
+                            //YSR BEGIN
+                            // GSTBaseAmt := 0;
+                            SalesInvLine.RESET;
+                            SalesInvLine.SETRANGE(SalesInvLine."Document No.", "Sales Invoice Header"."No.");
+                            SalesInvLine.SETFILTER(Quantity, '<>%1', 0);
+                            IF SalesInvLine.FINDSET THEN
+                                REPEAT
+                                    GSTBaseAmt += SalesInvLine."Line Amount"; //PCPL-Deepak
+                                UNTIL SalesInvLine.NEXT = 0;
+                            //YSR END
+
+                            RcheckCU.InitTextVariable;
+                            RcheckCU.FormatNoText(vTCSAmtWords, vTCSAmt, "Sales Invoice Header"."Currency Code");
+                            //PCPL 38
+                            //RcheckCU.InitTextVariable;
+                            //RcheckCU.FormatNoText(AmtWords, ROUND(GrossTotal + CGSTAmt + SGSTAmt + IGSTAmt), "Sales Invoice Header"."Currency Code");
+                            RcheckCU.InitTextVariable;
+                            RcheckCU.FormatNoText(AmtWords, ROUND((GrossTotal + CGSTAmt + SGSTAmt + IGSTAmt)), "Sales Invoice Header"."Currency Code");
+
+
+
+                            RcheckCU.InitTextVariable;
+                            RcheckCU.FormatNoText(AmtWordsgstbase, GSTBaseAmt, "Sales Invoice Header"."Currency Code");
+                            RcheckCU.InitTextVariable;
+                            RcheckCU.FormatNoText(AmtWordsCGS, CGSTAmt, "Sales Invoice Header"."Currency Code");
+                            RcheckCU.InitTextVariable;
+                            RcheckCU.FormatNoText(AmtWordsSGS, SGSTAmt, "Sales Invoice Header"."Currency Code");
+                            RcheckCU.InitTextVariable;
+                            RcheckCU.FormatNoText(AmtWordsIGS, IGSTAmt, "Sales Invoice Header"."Currency Code");
                         end;
 
                         trigger OnPreDataItem();
@@ -1051,8 +1075,10 @@ report 50095 "Tax Invoice (Sales - Invoice)"
             var
                 SalesInvLine: Record "Sales invoice line";
                 Location: Record Location;
+                GrossTotal: Decimal;
             begin
-                AmttoCustomer := 0; //"Amount to Customer";  //ysr //PCPL-Deepak
+                // AmttoCustomer := 0; //"Amount to Customer";  //ysr //PCPL-Deepak
+
                 //PCPL-25
                 PayTerm.RESET;
                 PayTerm.SETRANGE(PayTerm.Code, "Sales Invoice Header"."Payment Terms Code");
@@ -1199,24 +1225,24 @@ report 50095 "Tax Invoice (Sales - Invoice)"
                     ServiceTaxRegistrationNo := ''; //CompanyInfo."Service Tax Registration No."; //PCPL-Deepak
 
                 /*
-              RCheck.InitTextVariable;
-              RCheck.FormatNoText(AmtWords,AmttoCustomer,"Sales Invoice Header"."Currency Code");
+              RcheckCU.InitTextVariable;
+              RcheckCU.FormatNoText(AmtWords,AmttoCustomer,"Sales Invoice Header"."Currency Code");
                  */
 
                 SalesInvLine.SETRANGE("Document No.", "No.");
                 IF SalesInvLine.FINDSET THEN
                     salescount := SalesInvLine.COUNT;
 
-                //YSR BEGIN
-                GSTBaseAmt := 0;
-                SalesInvLine.RESET;
-                SalesInvLine.SETRANGE("Document No.", "No.");
-                SalesInvLine.SETFILTER(Quantity, '<>%1', 0);
-                IF SalesInvLine.FINDSET THEN
-                    REPEAT
-                        GSTBaseAmt += 0; //SalesInvLine."Tax Base Amount"; //PCPL-Deepak
-                    UNTIL SalesInvLine.NEXT = 0;
-                //YSR END
+                // //YSR BEGIN
+                // GSTBaseAmt := 0;
+                // SalesInvLine.RESET;
+                // SalesInvLine.SETRANGE("Document No.", "No.");
+                // SalesInvLine.SETFILTER(Quantity, '<>%1', 0);
+                // IF SalesInvLine.FINDSET THEN
+                //     REPEAT
+                //         GSTBaseAmt += SalesInvLine."Line Amount"; //PCPL-Deepak
+                //     UNTIL SalesInvLine.NEXT = 0;
+                // //YSR END
 
                 SalesShipmentLine.RESET;
                 SalesShipmentLine.SETRANGE(SalesShipmentLine."Order No.", "Order No.");
@@ -1240,8 +1266,8 @@ report 50095 "Tax Invoice (Sales - Invoice)"
                 //     UNTIL PostedStructureOrderDetails.NEXT = 0;
 
                 // END;
-                RCheck.InitTextVariable;
-                RCheck.FormatNoText(FreightAmtword, FreightAmt, '');
+                RcheckCU.InitTextVariable;
+                RcheckCU.FormatNoText(FreightAmtword, FreightAmt, "Sales Invoice Header"."Currency Code");
 
                 //PCPL >>
 
@@ -1528,7 +1554,8 @@ report 50095 "Tax Invoice (Sales - Invoice)"
         SGSTPer: Decimal;
         GSTBaseAmt: Decimal;
         AmttoCustomer: Decimal;
-        RCheck: Report 1401;
+        //RcheckCU: Report 1401;
+        RcheckCU: Codeunit 50099;
         AmtWords: array[2] of Text[80];
         salescount: Integer;
         AmtWordsCGS: array[2] of Text[80];
@@ -1556,6 +1583,8 @@ report 50095 "Tax Invoice (Sales - Invoice)"
         PayDesc: Text;
         EInvoiceDetail: Record 50041;
         IRNNO: Text[64];
+        SalesInvLine: Record 113;
+        Grosstotal: Decimal;
 
     procedure InitLogInteraction();
     begin

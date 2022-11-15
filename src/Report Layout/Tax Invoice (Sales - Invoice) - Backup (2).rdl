@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
   <AutoRefresh>0</AutoRefresh>
   <DataSources>
     <DataSource Name="DataSource">
@@ -71,7 +71,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!No_SalesInvoiceLineCaption.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!No_SalesInvoiceLineCaption.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -106,7 +106,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!Description_SalesInvLineCaption.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!Description_SalesInvLineCaption.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -140,7 +140,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>HSN Code (GST)</Value>
+                                                    <Value EvaluationMode="Auto">HSN Code (GST)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -174,7 +174,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>No. Of Packages</Value>
+                                                    <Value EvaluationMode="Auto">No. Of Packages</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -208,7 +208,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!Quantity_SalesInvoiceLineCaption.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!Quantity_SalesInvoiceLineCaption.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -243,7 +243,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>UOM</Value>
+                                                    <Value EvaluationMode="Auto">UOM</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -278,7 +278,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!UnitPriceCaption.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!UnitPriceCaption.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -313,7 +313,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!AmountCaption.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!AmountCaption.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -357,7 +357,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!No_SalesInvLine.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!No_SalesInvLine.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -397,7 +397,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!Desc_SalesInvLine.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!Desc_SalesInvLine.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -437,7 +437,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!HSNSACCode_SalesInvoiceLine.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!HSNSACCode_SalesInvoiceLine.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -477,7 +477,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!pack.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!pack.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -517,7 +517,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Code.BlankZero(Fields!Qty_SalesInvLine.Value)</Value>
+                                                    <Value EvaluationMode="Auto">=Code.BlankZero(Fields!Qty_SalesInvLine.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -558,7 +558,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!UOM_SalesInvoiceLine.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!UOM_SalesInvoiceLine.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -598,7 +598,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Code.BlankZero(Fields!UnitPrice_SalesInvLine.Value)</Value>
+                                                    <Value EvaluationMode="Auto">=Code.BlankZero(Fields!UnitPrice_SalesInvLine.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -639,7 +639,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Code.BlankZero(Fields!LineAmount_SalesInvLine.Value)</Value>
+                                                    <Value EvaluationMode="Auto">=Code.BlankZero(Fields!LineAmount_SalesInvLine.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -689,7 +689,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -728,7 +728,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Batch No:</Value>
+                                                    <Value EvaluationMode="Auto">Batch No:</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -736,57 +736,28 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value xml:space="preserve"> </Value>
+                                                    <Value xml:space="preserve" EvaluationMode="Auto"> </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!LotNO.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!LotNO.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value> ,</Value>
+                                                    <Value EvaluationMode="Auto"> ,</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>Qty</Value>
-                                                    <Style>
-                                                      <FontFamily>Segoe UI</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                      <FontWeight>Bold</FontWeight>
-                                                    </Style>
-                                                  </TextRun>
-                                                  <TextRun>
-                                                    <Value>-</Value>
-                                                    <Style>
-                                                      <FontFamily>Segoe UI</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                  <TextRun>
-                                                    <Value>=Fields!Qty.Value</Value>
-                                                    <Style>
-                                                      <FontFamily>Segoe UI</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                  <TextRun>
-                                                    <Value xml:space="preserve"> </Value>
-                                                    <Style>
-                                                      <FontFamily>Segoe UI</FontFamily>
-                                                      <FontSize>8pt</FontSize>
-                                                    </Style>
-                                                  </TextRun>
-                                                  <TextRun>
-                                                    <Value>MFG Date: </Value>
+                                                    <Value EvaluationMode="Auto">Qty</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -794,21 +765,28 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=CDate(Fields!MFGDATE.Value).TOString("MMM-yyy")</Value>
+                                                    <Value EvaluationMode="Auto">-</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value xml:space="preserve"> </Value>
+                                                    <Value EvaluationMode="Auto">=Fields!Qty.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>EXp Date: </Value>
+                                                    <Value xml:space="preserve" EvaluationMode="Auto"> </Value>
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">MFG Date: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -816,7 +794,29 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Cdate(Fields!EXPDATE.Value).TOString("MMM-yyy")</Value>
+                                                    <Value EvaluationMode="Auto">=CDate(Fields!MFGDATE.Value).TOString("MMM-yyy")</Value>
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value xml:space="preserve" EvaluationMode="Auto"> </Value>
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">EXp Date: </Value>
+                                                    <Style>
+                                                      <FontFamily>Segoe UI</FontFamily>
+                                                      <FontSize>8pt</FontSize>
+                                                      <FontWeight>Bold</FontWeight>
+                                                    </Style>
+                                                  </TextRun>
+                                                  <TextRun>
+                                                    <Value EvaluationMode="Auto">=Cdate(Fields!EXPDATE.Value).TOString("MMM-yyy")</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -855,7 +855,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -894,7 +894,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -933,7 +933,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -972,7 +972,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1011,7 +1011,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1050,7 +1050,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1098,7 +1098,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1132,7 +1132,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1166,7 +1166,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1200,7 +1200,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1234,7 +1234,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1268,7 +1268,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1302,7 +1302,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1336,7 +1336,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style />
                                                   </TextRun>
                                                 </TextRuns>
@@ -1375,7 +1375,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Insurance Policy No:</Value>
+                                                    <Value EvaluationMode="Auto">Insurance Policy No:</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1383,14 +1383,14 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value xml:space="preserve"> </Value>
+                                                    <Value xml:space="preserve" EvaluationMode="Auto"> </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!Insuranceno.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!Insuranceno.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1432,7 +1432,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1465,7 +1465,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1498,7 +1498,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1539,7 +1539,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!FreightAmtword.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!FreightAmtword.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1616,14 +1616,14 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Code.BlankZero(Fields!FreightAmt.Value)</Value>
+                                                    <Value EvaluationMode="Auto">=Code.BlankZero(Fields!FreightAmt.Value)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value xml:space="preserve">        </Value>
+                                                    <Value xml:space="preserve" EvaluationMode="Auto">        </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1665,7 +1665,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!AmtwordsGSTbase.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!AmtwordsGSTbase.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>7pt</FontSize>
@@ -1758,7 +1758,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!FreightAmt.Value + Fields!GSTBaseAmt.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!FreightAmt.Value + Fields!GSTBaseAmt.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1800,7 +1800,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!AmtWordsCGS.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!AmtWordsCGS.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>7pt</FontSize>
@@ -1857,7 +1857,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!CGSTPer.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!CGSTPer.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1892,7 +1892,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!totCGSTAmt.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!totCGSTAmt.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -1934,7 +1934,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!AmtWordsSGS.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!AmtWordsSGS.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>7pt</FontSize>
@@ -1991,7 +1991,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!SGSPer.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!SGSPer.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2026,7 +2026,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!totSGSTAmt.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!totSGSTAmt.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2069,7 +2069,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!AmtWordsIGS.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!AmtWordsIGS.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>7pt</FontSize>
@@ -2126,7 +2126,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!IGSTPer.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!IGSTPer.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2160,7 +2160,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value xml:space="preserve"> </Value>
+                                                    <Value xml:space="preserve" EvaluationMode="Auto"> </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2168,7 +2168,7 @@
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!totIGSTAmt.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!totIGSTAmt.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2210,7 +2210,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!vTCSAmtWords.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!vTCSAmtWords.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>7pt</FontSize>
@@ -2267,7 +2267,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!vTCSPer.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!vTCSPer.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2301,7 +2301,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!vTCSAmt.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!vTCSAmt.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2343,14 +2343,14 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Amount In Words:</Value>
+                                                    <Value EvaluationMode="Auto">Amount In Words:</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!AmtWords.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!AmtWords.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2407,7 +2407,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>GrandTotal</Value>
+                                                    <Value EvaluationMode="Auto">GrandTotal</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2442,7 +2442,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>=Fields!FreightAmt.Value + Fields!GSTBaseAmt.Value+Fields!totCGSTAmt.Value+Fields!totSGSTAmt.Value+Fields!totIGSTAmt.Value+Fields!vTCSAmt.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!AmttoCustomer.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -2469,7 +2469,6 @@
                                               <PaddingLeft>5pt</PaddingLeft>
                                             </Style>
                                           </Textbox>
-                                          <rd:Selected>true</rd:Selected>
                                         </CellContents>
                                       </TablixCell>
                                     </TablixCells>
@@ -2488,7 +2487,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Certified that the Particulars given above are true and correct</Value>
+                                                        <Value EvaluationMode="Auto">Certified that the Particulars given above are true and correct</Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -2526,7 +2525,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value> Electronic Reference Number</Value>
+                                                        <Value EvaluationMode="Auto"> Electronic Reference Number</Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -2566,7 +2565,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>Certified that the particulars given above are true &amp; correct and the amount indicated represents the price actually charge andthat there is not additional consideration flowing, directly and indirectly from the buyer.</Value>
+                                                        <Value EvaluationMode="Auto">Certified that the particulars given above are true &amp; correct and the amount indicated represents the price actually charge andthat there is not additional consideration flowing, directly and indirectly from the buyer.</Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -2616,7 +2615,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>IRN NO. : </Value>
+                                                        <Value EvaluationMode="Auto">IRN NO. : </Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -2624,7 +2623,7 @@
                                                         </Style>
                                                       </TextRun>
                                                       <TextRun>
-                                                        <Value>=Fields!IRNNO.Value</Value>
+                                                        <Value EvaluationMode="Auto">=Fields!IRNNO.Value</Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -2669,7 +2668,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>TERMS &amp; CONDITIONS</Value>
+                                                        <Value EvaluationMode="Auto">TERMS &amp; CONDITIONS</Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
                                                           <FontSize>8pt</FontSize>
@@ -2703,7 +2702,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>=Fields!Name_CompanyInfo.Value</Value>
+                                                        <Value EvaluationMode="Auto">=Fields!Name_CompanyInfo.Value</Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
                                                           <FontSize>9pt</FontSize>
@@ -2739,7 +2738,7 @@
                                                   <Paragraph>
                                                     <TextRuns>
                                                       <TextRun>
-                                                        <Value>1)Interest @18% will be charged after due date.2) No.claim in respect of material supplied videthis invoice will be entertained unless the same is lodged in writing within 15 days of dispatch.3) All goods must be inspected properly at the time of delivery.4) Goods once sold will not be taken back.
+                                                        <Value EvaluationMode="Auto">1)Interest @18% will be charged after due date.2) No.claim in respect of material supplied videthis invoice will be entertained unless the same is lodged in writing within 15 days of dispatch.3) All goods must be inspected properly at the time of delivery.4) Goods once sold will not be taken back.
 </Value>
                                                         <Style>
                                                           <FontFamily>Segoe UI</FontFamily>
@@ -2793,7 +2792,7 @@
                                                                 <Paragraph>
                                                                   <TextRuns>
                                                                     <TextRun>
-                                                                      <Value />
+                                                                      <Value EvaluationMode="Auto" />
                                                                       <Style />
                                                                     </TextRun>
                                                                   </TextRuns>
@@ -2833,7 +2832,7 @@
                                                                 <Paragraph>
                                                                   <TextRuns>
                                                                     <TextRun>
-                                                                      <Value>Authorised Signatory</Value>
+                                                                      <Value EvaluationMode="Auto">Authorised Signatory</Value>
                                                                       <Style>
                                                                         <FontFamily>Segoe UI</FontFamily>
                                                                         <FontSize>8pt</FontSize>
@@ -3067,7 +3066,7 @@
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontSize>7pt</FontSize>
                                                       <Color>Red</Color>
@@ -3245,7 +3244,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value>TAX INVOICE</Value>
+                                                                  <Value EvaluationMode="Auto">TAX INVOICE</Value>
                                                                   <Style>
                                                                     <FontFamily>Segoe UI</FontFamily>
                                                                     <FontSize>9pt</FontSize>
@@ -3253,7 +3252,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                                   </Style>
                                                                 </TextRun>
                                                                 <TextRun>
-                                                                  <Value xml:space="preserve">                </Value>
+                                                                  <Value xml:space="preserve" EvaluationMode="Auto">                </Value>
                                                                   <Style>
                                                                     <FontFamily>Segoe UI</FontFamily>
                                                                     <FontSize>9pt</FontSize>
@@ -3294,7 +3293,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value>(Original for Consignee/Duplicate for Transporter/Triplicate for Consigner)</Value>
+                                                                  <Value EvaluationMode="Auto">(Original for Consignee/Duplicate for Transporter/Triplicate for Consigner)</Value>
                                                                   <Style>
                                                                     <FontFamily>Segoe UI</FontFamily>
                                                                     <FontSize>8pt</FontSize>
@@ -3335,7 +3334,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value>=Fields!Name_CompanyInfo.Value</Value>
+                                                                  <Value EvaluationMode="Auto">=Fields!Name_CompanyInfo.Value</Value>
                                                                   <Style>
                                                                     <FontFamily>Segoe UI</FontFamily>
                                                                     <FontWeight>Bold</FontWeight>
@@ -3376,7 +3375,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value>=Fields!LocToAddress.Value</Value>
+                                                                  <Value EvaluationMode="Auto">=Fields!LocToAddress.Value</Value>
                                                                   <Style>
                                                                     <FontFamily>Segoe UI</FontFamily>
                                                                     <FontSize>8pt</FontSize>
@@ -3417,7 +3416,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value>=Fields!Address_com.Value</Value>
+                                                                  <Value EvaluationMode="Auto">=Fields!Address_com.Value</Value>
                                                                   <Style>
                                                                     <FontFamily>Segoe UI</FontFamily>
                                                                     <FontSize>8pt</FontSize>
@@ -3458,7 +3457,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                             <Paragraph>
                                                               <TextRuns>
                                                                 <TextRun>
-                                                                  <Value>=Fields!City_CompanyInfo.Value</Value>
+                                                                  <Value EvaluationMode="Auto">=Fields!City_CompanyInfo.Value</Value>
                                                                   <Style>
                                                                     <FontFamily>Segoe UI</FontFamily>
                                                                     <FontSize>8pt</FontSize>
@@ -3588,7 +3587,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Details of Receiver (Billed to)</Value>
+                                                    <Value EvaluationMode="Auto">Details of Receiver (Billed to)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3633,7 +3632,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value> Details of Consignee (Shipped to)</Value>
+                                                    <Value EvaluationMode="Auto"> Details of Consignee (Shipped to)</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3678,7 +3677,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Name</Value>
+                                                    <Value EvaluationMode="Auto">Name</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3708,7 +3707,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3716,7 +3715,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!BillToName.Value + " " + Fields!BilltoName2_SalesInvoiceHeader.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!BillToName.Value + " " + Fields!BilltoName2_SalesInvoiceHeader.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3753,7 +3752,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Name</Value>
+                                                    <Value EvaluationMode="Auto">Name</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3783,7 +3782,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3791,7 +3790,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipToName.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!ShipToName.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3826,7 +3825,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Address</Value>
+                                                    <Value EvaluationMode="Auto">Address</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3856,7 +3855,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3864,7 +3863,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!BillToAddress.Value &amp; " " &amp; Fields!BillToAddress2.Value &amp; " " &amp; Fields!BillToCity.Value &amp; " - " &amp; Fields!BillToPostCodse.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!BillToAddress.Value &amp; " " &amp; Fields!BillToAddress2.Value &amp; " " &amp; Fields!BillToCity.Value &amp; " - " &amp; Fields!BillToPostCodse.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3901,7 +3900,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Address</Value>
+                                                    <Value EvaluationMode="Auto">Address</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3931,7 +3930,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3939,7 +3938,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipToAdds.Value &amp; "  " &amp; Fields!ShipToAdds2.Value &amp; " " &amp; Fields!ShipToCity.Value &amp; " - " &amp; Fields!ShipToPostCode.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!ShipToAdds.Value &amp; "  " &amp; Fields!ShipToAdds2.Value &amp; " " &amp; Fields!ShipToCity.Value &amp; " - " &amp; Fields!ShipToPostCode.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -3974,7 +3973,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>State</Value>
+                                                    <Value EvaluationMode="Auto">State</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4004,7 +4003,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4012,7 +4011,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!BillToStateName.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!BillToStateName.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4049,7 +4048,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>State</Value>
+                                                    <Value EvaluationMode="Auto">State</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4079,7 +4078,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4087,7 +4086,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipToStateName.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!ShipToStateName.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4122,7 +4121,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>StateCode</Value>
+                                                    <Value EvaluationMode="Auto">StateCode</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4152,7 +4151,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4160,7 +4159,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!BillToStateCoder.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!BillToStateCoder.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4197,7 +4196,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>StateCode</Value>
+                                                    <Value EvaluationMode="Auto">StateCode</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4227,7 +4226,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4235,7 +4234,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipToState.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!ShipToState.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4270,7 +4269,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>GSTIN Number</Value>
+                                                    <Value EvaluationMode="Auto">GSTIN Number</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4300,7 +4299,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4308,7 +4307,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!BillToGSTIN.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!BillToGSTIN.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4345,7 +4344,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>GSTIN Number</Value>
+                                                    <Value EvaluationMode="Auto">GSTIN Number</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4375,7 +4374,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4383,7 +4382,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!ShipToGSTIN.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!ShipToGSTIN.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4418,7 +4417,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Drug Lic. No.</Value>
+                                                    <Value EvaluationMode="Auto">Drug Lic. No.</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4448,7 +4447,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4456,7 +4455,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!DrugLicNo.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!DrugLicNo.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4493,7 +4492,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4523,7 +4522,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4558,7 +4557,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Payment Term</Value>
+                                                    <Value EvaluationMode="Auto">Payment Term</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4588,7 +4587,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4596,7 +4595,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!PayDesc.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!PayDesc.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4633,7 +4632,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4663,7 +4662,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value />
+                                                    <Value EvaluationMode="Auto" />
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4759,7 +4758,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>GSTIN Number</Value>
+                                                    <Value EvaluationMode="Auto">GSTIN Number</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4788,7 +4787,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4796,7 +4795,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!GSTIN.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!GSTIN.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4832,7 +4831,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Transportation Mode</Value>
+                                                    <Value EvaluationMode="Auto">Transportation Mode</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4861,7 +4860,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4869,7 +4868,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!TransportMethod_SalesInvoiceHeader.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!TransportMethod_SalesInvoiceHeader.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4910,7 +4909,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Tax Is Payable On Reverse Charge</Value>
+                                                    <Value EvaluationMode="Auto">Tax Is Payable On Reverse Charge</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4939,7 +4938,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: NA</Value>
+                                                    <Value EvaluationMode="Auto">: NA</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -4975,7 +4974,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Vehicle No.</Value>
+                                                    <Value EvaluationMode="Auto">Vehicle No.</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5004,7 +5003,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5012,7 +5011,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!VehicleNo_SalesInvoiceHeader.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!VehicleNo_SalesInvoiceHeader.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5053,7 +5052,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Invoice Serial Number</Value>
+                                                    <Value EvaluationMode="Auto">Invoice Serial Number</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5082,7 +5081,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5090,7 +5089,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!No_SalesInvoiceHeader.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!No_SalesInvoiceHeader.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5126,7 +5125,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Date &amp; Time of Supply</Value>
+                                                    <Value EvaluationMode="Auto">Date &amp; Time of Supply</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5155,7 +5154,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5163,7 +5162,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!DateNtimeofRemoval.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!DateNtimeofRemoval.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5204,7 +5203,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Invoice Date</Value>
+                                                    <Value EvaluationMode="Auto">Invoice Date</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5235,7 +5234,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5244,7 +5243,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Cdate(Fields!PostingDate_SalesInvoiceHeader.Value).ToString("dd/MM/yyy")</Value>
+                                                    <Value EvaluationMode="Auto">=Cdate(Fields!PostingDate_SalesInvoiceHeader.Value).ToString("dd/MM/yyy")</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5281,7 +5280,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Place Of Supply</Value>
+                                                    <Value EvaluationMode="Auto">Place Of Supply</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5312,7 +5311,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5320,7 +5319,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!ShiptoCity_SalesInvoiceHeader.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!ShiptoCity_SalesInvoiceHeader.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5361,7 +5360,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>PO No. &amp; Date</Value>
+                                                    <Value EvaluationMode="Auto">PO No. &amp; Date</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5395,7 +5394,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5403,7 +5402,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!PONoNDate.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!PONoNDate.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5444,7 +5443,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>Drug License No.</Value>
+                                                    <Value EvaluationMode="Auto">Drug License No.</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5478,7 +5477,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                               <Paragraph>
                                                 <TextRuns>
                                                   <TextRun>
-                                                    <Value>: </Value>
+                                                    <Value EvaluationMode="Auto">: </Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
@@ -5486,7 +5485,7 @@ Cstr(Fields!Customer_GST_RegistrationNo.Value)
                                                     </Style>
                                                   </TextRun>
                                                   <TextRun>
-                                                    <Value>=Fields!Druglicense_Caption_Lbl.Value</Value>
+                                                    <Value EvaluationMode="Auto">=Fields!Druglicense_Caption_Lbl.Value</Value>
                                                     <Style>
                                                       <FontFamily>Segoe UI</FontFamily>
                                                       <FontSize>8pt</FontSize>
